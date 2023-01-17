@@ -6,7 +6,7 @@
 /*   By: jniemine <jniemine@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 13:15:33 by jniemine          #+#    #+#             */
-/*   Updated: 2023/01/17 15:50:36 by jniemine         ###   ########.fr       */
+/*   Updated: 2023/01/17 16:11:20 by jniemine         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static void	init_variables(int *i_args, int *cur, int *start, int *end)
 
 static int	if_error(char *c, t_token *args, char *line, int end)
 {
-	if (!c || test_if_error(&line[end]))
+	if (!c)
 	{
 		free_tokens(&args);
 		ft_strdel(&line);
